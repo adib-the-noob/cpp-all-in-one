@@ -19,5 +19,10 @@ int main(){
 
     std::cout << students;
 
+
+    // multiplication
+    students = 2;
+    
+
     return 0;
 }
