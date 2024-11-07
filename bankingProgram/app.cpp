@@ -24,8 +24,6 @@ int main()
 
         cin >> choice;
 
-        cin.clear();
-        fflush(stdin);
 
         switch (choice)
         {
