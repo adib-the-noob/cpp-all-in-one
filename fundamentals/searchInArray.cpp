@@ -1,20 +1,21 @@
 #include<iostream>
 using namespace std;
 
-int searchArray(int array[], int size, int element);
+int searchArray(string array[], int size, string element);
 
 int main()
 {  
-    int numbers[] = {1, 2, 3, 4, 5, 6};
-    int size = sizeof(numbers) / sizeof(numbers[0]);
+    // int numbers[] = {1, 2, 3, 4, 5, 6};
+    string given_array[] = {"pizza", "hamburger", "hacker"};
+    int size = sizeof(given_array) / sizeof(given_array[0]);
 
     int index;
-    int myNum;
+    string element_name;
 
     cout << "Enter the element search for: ";
-    cin >> myNum;
+    cin >> element_name;
 
-    index = searchArray(numbers, size, myNum);
+    index = searchArray(given_array, size, element_name);
     
     if (index != -1){
         cout << "Element Found " << index << endl;
@@ -26,7 +27,7 @@ int main()
 
 }
 
-int searchArray(int array[], int size, int element){
+int searchArray(string array[], int size, string element){
     for(int i=0; i < size; i++){
         if(array[i] == element){
             return i;
